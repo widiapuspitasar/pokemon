@@ -18,7 +18,7 @@ const CardPokemon = ({ pokemon }: PokemonCardProps) => {
 
   useEffect(() => {
     getPokemonColor();
-  }, []);
+  }, [getPokemonColor]);
 
   return (
     <Link href={`/pokemon/${pokemon.name}`} passHref>
